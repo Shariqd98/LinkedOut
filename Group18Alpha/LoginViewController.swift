@@ -55,6 +55,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
             defaults.synchronize()
     }
     
+    @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {
+        
+    }
+    
     //keyboard dismissal on return button
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
