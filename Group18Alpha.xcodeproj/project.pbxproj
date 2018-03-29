@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0299052F206C5009000D4961 /* TestQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299052E206C5009000D4961 /* TestQuestionsViewController.swift */; };
 		02C9E6BD206B293000C6D7A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C9E6BC206B293000C6D7A2 /* AppDelegate.swift */; };
 		02C9E6BF206B293000C6D7A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C9E6BE206B293000C6D7A2 /* ViewController.swift */; };
 		02C9E6C2206B293000C6D7A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C9E6C0206B293000C6D7A2 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0299052E206C5009000D4961 /* TestQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuestionsViewController.swift; sourceTree = "<group>"; };
 		02C9E6B9206B293000C6D7A2 /* Group18Alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group18Alpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C9E6BC206B293000C6D7A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02C9E6BE206B293000C6D7A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				02C9E6BC206B293000C6D7A2 /* AppDelegate.swift */,
 				02C9E6BE206B293000C6D7A2 /* ViewController.swift */,
+				0299052E206C5009000D4961 /* TestQuestionsViewController.swift */,
 				02C9E6C0206B293000C6D7A2 /* Main.storyboard */,
 				02C9E6C6206B293000C6D7A2 /* Assets.xcassets */,
 				02C9E6C8206B293000C6D7A2 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			files = (
 				02C9E6C5206B293000C6D7A2 /* Group18Alpha.xcdatamodeld in Sources */,
 				02C9E6BF206B293000C6D7A2 /* ViewController.swift in Sources */,
+				0299052F206C5009000D4961 /* TestQuestionsViewController.swift in Sources */,
 				02C9E6BD206B293000C6D7A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
