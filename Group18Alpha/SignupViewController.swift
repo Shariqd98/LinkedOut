@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
-class SignupViewController: UIViewController, UITextFieldDelegate {
+class SignupViewController: UIViewController {
 
     @IBOutlet var firstName: UITextField!
     @IBOutlet var lastName: UITextField!
@@ -21,39 +23,11 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var userName: UITextField!
     @IBOutlet var passWord: UITextField!
     @IBOutlet var confirmPassword: UITextField!
-    //userdata
-    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.hideKeyboardWhenTappedAround()
-        self.firstName.delegate = self
-        self.lastName.delegate = self
-        self.dateOfBirth.delegate = self
-        self.city.delegate = self
-        self.state.delegate = self
-        self.zipCode.delegate = self
-        self.phoneNum.delegate = self
-        self.emailAdd.delegate = self
-        self.userName.delegate = self
-        self.passWord.delegate = self
-        self.confirmPassword.delegate = self
-    }
-
-    @IBAction func doneBtn(_ sender: UIButton) {
-        defaults.set(firstName.text!, forKey: "firstname")
-        defaults.set(lastName.text!, forKey: "lastname")
-        defaults.set(dateOfBirth.text!, forKey: "dob")
-        defaults.set(city.text!, forKey: "city")
-        defaults.set(state.text!, forKey: "state")
-        defaults.set(zipCode.text!, forKey: "zip")
-        defaults.set(phoneNum.text!, forKey: "phonenum")
-        defaults.set(emailAdd.text!, forKey: "email")
-        defaults.set(userName.text!, forKey: "username")
-        defaults.set(passWord.text!, forKey: "password")
-        defaults.synchronize()
     }
     
     //keyboard dismissal on return button
@@ -62,71 +36,92 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         return false
     }
     
-    //makes sure all text fields are filled out and that you confimred password correctly
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if identifier == "signupSegue" {
-            //confirms passwords match
-            if (confirmPassword.text! != passWord.text!) {
-                let alertView = UIAlertController(title: "Passwords Do Not Match", message: "Please match the passwords.", preferredStyle: UIAlertControllerStyle.alert)
-                let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
-                    print("Ok Button")
-                })
-                alertView.addAction(ok)
-                present(alertView, animated: true, completion: nil)
+    @IBAction func doneBtn(_ sender: Any) {
+        signupDone()
+        handleSignUp()
+    }
+    
+    func handleSignUp() {
+        let username = userName.text!
+        let email = emailAdd.text!
+        let pass = passWord.text!
+        
+        Auth.auth().createUser(withEmail: email, password: pass) { user, error in
+            if error == nil && user != nil {
+                print("User Created!")
                 
-                return false
-                //here, down, confirms that all text fields are filled out
-            }else if ((firstName.text!.isEmpty) || (lastName.text!.isEmpty)) {
-                let alertView = UIAlertController(title: "Missing Info", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
-                let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
-                    print("Ok Button")
-                })
-                alertView.addAction(ok)
-                present(alertView, animated: true, completion: nil)
+                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                changeRequest?.displayName = username
+                changeRequest?.commitChanges { error in
+                    if error == nil {
+                        print("User display name changed!")
+                    }
+                }
+                self.performSegue(withIdentifier: "signupSegue", sender: Any?.self)
+            } else {
+                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                 
-                return false
-            }else if ((dateOfBirth.text!.isEmpty) || (city.text!.isEmpty)) {
-                let alertView = UIAlertController(title: "Missing Info", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
-                let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
-                    print("Ok Button")
-                })
-                alertView.addAction(ok)
-                present(alertView, animated: true, completion: nil)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
                 
-                return false
-            }else if ((state.text!.isEmpty) || (zipCode.text!.isEmpty)) {
-                let alertView = UIAlertController(title: "Missing Info", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
-                let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
-                    print("Ok Button")
-                })
-                alertView.addAction(ok)
-                present(alertView, animated: true, completion: nil)
-                
-                return false
-            }else if ((phoneNum.text!.isEmpty) || (emailAdd.text!.isEmpty)) {
-                let alertView = UIAlertController(title: "Missing Info", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
-                let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
-                    print("Ok Button")
-                })
-                alertView.addAction(ok)
-                present(alertView, animated: true, completion: nil)
-                
-                return false
-            }else if ((userName.text!.isEmpty) || (passWord.text!.isEmpty)) {
-                let alertView = UIAlertController(title: "Missing Info", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
-                let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
-                    print("Ok Button")
-                })
-                alertView.addAction(ok)
-                present(alertView, animated: true, completion: nil)
-                
-                return false
-            }else {
-                return true
+                self.present(alertController, animated: true, completion: nil)
             }
+            
         }
-        // by default, transition
-        return true
+    }
+    
+    //makes sure all text fields are filled out and that you confimred password correctly
+    func signupDone() {
+        //confirms passwords match
+        if (confirmPassword.text! != passWord.text!) {
+            let alertView = UIAlertController(title: "Passwords Do Not Match", message: "Please match the passwords.", preferredStyle: UIAlertControllerStyle.alert)
+            let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
+                print("Ok Button")
+            })
+            alertView.addAction(ok)
+            present(alertView, animated: true, completion: nil)
+            
+            //here, down, confirms that all text fields are filled out
+        }else if ((firstName.text!.isEmpty) || (lastName.text!.isEmpty)) {
+            let alertView = UIAlertController(title: "Missing Info", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
+            let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
+                print("Ok Button")
+            })
+            alertView.addAction(ok)
+            present(alertView, animated: true, completion: nil)
+            
+        }else if ((dateOfBirth.text!.isEmpty) || (city.text!.isEmpty)) {
+            let alertView = UIAlertController(title: "Missing Info", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
+            let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
+                print("Ok Button")
+            })
+            alertView.addAction(ok)
+            present(alertView, animated: true, completion: nil)
+            
+        }else if ((state.text!.isEmpty) || (zipCode.text!.isEmpty)) {
+            let alertView = UIAlertController(title: "Missing Info", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
+            let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
+                print("Ok Button")
+            })
+            alertView.addAction(ok)
+            present(alertView, animated: true, completion: nil)
+            
+        }else if ((phoneNum.text!.isEmpty) || (emailAdd.text!.isEmpty)) {
+            let alertView = UIAlertController(title: "Missing Info", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
+            let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
+                print("Ok Button")
+            })
+            alertView.addAction(ok)
+            present(alertView, animated: true, completion: nil)
+            
+        }else if ((userName.text!.isEmpty) || (passWord.text!.isEmpty)) {
+            let alertView = UIAlertController(title: "Missing Info", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
+            let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
+                print("Ok Button")
+            })
+            alertView.addAction(ok)
+            present(alertView, animated: true, completion: nil)
+        }
     }
     
     override func didReceiveMemoryWarning() {

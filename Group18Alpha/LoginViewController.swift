@@ -7,31 +7,38 @@
 //
 
 import UIKit
+import Firebase
 
-class LoginViewController: UIViewController, UITextFieldDelegate{
+class LoginViewController: UIViewController {
 
-    @IBOutlet var userName: UITextField!
+    @IBOutlet var userName: UITextField! //is actually e-mail
     @IBOutlet var passWord: UITextField!
     //used for forgot pass alert
     var emailTextFld: UITextField? = nil
-    //userDefaults 
-    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         self.hideKeyboardWhenTappedAround()
-        self.userName.delegate = self
-        self.passWord.delegate = self
     }
 
     @IBAction func forgotPassBtn(_ sender: AnyObject) {
         let alertView = UIAlertController(title: "Forgot Password", message: "Enter your E-mail to change your password.", preferredStyle: UIAlertControllerStyle.alert)
         
         let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
-            print("Ok Button")
-            print("You entered \(self.emailTextFld!.text!)")
+            Auth.auth().sendPasswordReset(withEmail: (self.emailTextFld?.text)!) {error in
+                if error == nil {
+                    print("Password reset email sent!")
+                }else {
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            }
         })
         let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) { (action) -> Void in
             print("Cancel Button")
@@ -50,14 +57,35 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
     }
     
     @IBAction func loginBtn(_ sender: Any) {
-            defaults.set(userName.text!, forKey: "username")
-            defaults.set(passWord.text!, forKey: "password")
-            defaults.synchronize()
+        let email = userName.text!
+        let pass = passWord.text!
+        
+        Auth.auth().signIn(withEmail: email, password: pass) { user, error in
+            if error == nil && user != nil {
+                print("Logged in!")
+                self.performSegue(withIdentifier: "loginSegue", sender: Any?.self)
+            }else {
+                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
+                
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
     }
     
     @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {
         
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//
+//        if let user = Auth.auth().currentUser {
+//            self.performSegue(withIdentifier: "loginSegue", sender: self)
+//        }
+//    }
     
     //keyboard dismissal on return button
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -66,24 +94,24 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
     }
     
     //alert pop if missing login information
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if identifier == "loginSegue" {
-            if (userName.text!.isEmpty) || (passWord.text!.isEmpty) {
-                let alertView = UIAlertController(title: "Missing Login Info", message: "Please enter a Username or Password.", preferredStyle: UIAlertControllerStyle.alert)
-                let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
-                    print("Ok Button")
-                })
-                alertView.addAction(ok)
-                present(alertView, animated: true, completion: nil)
-                
-                return false
-            }else {
-                return true
-            }
-        }
-        // by default, transition
-        return true
-    }
+//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+//        if identifier == "loginSegue" {
+//            if (userName.text!.isEmpty) || (passWord.text!.isEmpty) {
+//                let alertView = UIAlertController(title: "Missing Login Info", message: "Please enter a Email or Password.", preferredStyle: UIAlertControllerStyle.alert)
+//                let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
+//                    print("Ok Button")
+//                })
+//                alertView.addAction(ok)
+//                present(alertView, animated: true, completion: nil)
+//
+//                return false
+//            }else {
+//                return true
+//            }
+//        }
+//        // by default, transition
+//        return true
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
