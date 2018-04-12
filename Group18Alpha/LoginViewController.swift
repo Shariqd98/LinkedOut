@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FBSDKLoginKit
+import TwitterKit
 
 class LoginViewController: UIViewController {
 
@@ -110,6 +111,31 @@ class LoginViewController: UIViewController {
             })
             
         }
+    }
+    
+    //Twitter login
+    @IBAction func twitterLogin(sender: UIButton) {
+        TWTRTwitter.sharedInstance().logIn(completion: { (session, error) in
+            if error != nil {
+                print("Login error: \(String(describing: error?.localizedDescription))")
+                let alertController = UIAlertController(title: "Login Error", message: error?.localizedDescription, preferredStyle: .alert)
+                let okayAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(okayAction)
+                self.present(alertController, animated: true, completion: nil)
+                return
+            }else {
+                guard let token = session?.authToken else {return}
+                guard let secret = session?.authTokenSecret else {return}
+                let credential = TwitterAuthProvider.credential(withToken: token, secret: secret)
+                Auth.auth().signIn(with: credential, completion: {(user, error) in
+                    if error != nil {
+                        print("Failed to login using Firebase \(String(describing: error?.localizedDescription))")
+                        return
+                    }
+                    self.performSegue(withIdentifier: "loginSegue", sender: self)
+                })
+            }
+        })
     }
     
     @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {

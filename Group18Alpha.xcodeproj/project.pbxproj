@@ -31,6 +31,7 @@
 		04B37C9EBEF82455B83472CC /* Pods-Group18Alpha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Group18Alpha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Group18Alpha/Pods-Group18Alpha.debug.xcconfig"; sourceTree = "<group>"; };
 		A103D78102B795D6091A9E62 /* Pods-Group18Alpha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Group18Alpha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Group18Alpha/Pods-Group18Alpha.release.xcconfig"; sourceTree = "<group>"; };
 		B4CF039DF5A49DE556C6E3DC /* Pods_Group18Alpha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Group18Alpha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0EE24B207FE16400D026FB /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		DA6A5E3B206C66970069AD50 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DA6A5E3D206C66BA0069AD50 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		DAD6055B207EC1A300AFE2A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		C0F5ACB95B9D8989E39DE201 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA0EE24B207FE16400D026FB /* SafariServices.framework */,
 				B4CF039DF5A49DE556C6E3DC /* Pods_Group18Alpha.framework */,
 			);
 			name = Frameworks;
@@ -112,6 +114,7 @@
 				02C9E6B6206B293000C6D7A2 /* Frameworks */,
 				02C9E6B7206B293000C6D7A2 /* Resources */,
 				24A110196F7F882115B858CB /* [CP] Embed Pods Frameworks */,
+				46CFDD8980495670566550F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,6 +186,8 @@
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -192,11 +197,33 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Group18Alpha/Pods-Group18Alpha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46CFDD8980495670566550F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Group18Alpha/Pods-Group18Alpha-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Group18Alpha/Pods-Group18Alpha-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED4C9C06920FCC6E706815D7 /* [CP] Check Pods Manifest.lock */ = {

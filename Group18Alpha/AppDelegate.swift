@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import Firebase
 import FBSDKCoreKit
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,13 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        TWTRTwitter.sharedInstance().start(withConsumerKey:"6EqfvrtvgrnSQxFWeteGSfNSb", consumerSecret:"1GykyMxKUfNp9qW2CjvL3d52P4AqWM2TJegOUPjEZYkNFeNLdL")
         return true
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        let handled = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
-        
-        return handled
+        let facebookLogin = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
+        let twitterLogin = TWTRTwitter.sharedInstance().application(app, open: url, options: options)
+
+        return facebookLogin || twitterLogin
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
