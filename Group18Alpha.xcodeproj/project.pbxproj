@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0299052F206C5009000D4961 /* TestQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299052E206C5009000D4961 /* TestQuestionsViewController.swift */; };
 		02C9E6BD206B293000C6D7A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C9E6BC206B293000C6D7A2 /* AppDelegate.swift */; };
 		02C9E6BF206B293000C6D7A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C9E6BE206B293000C6D7A2 /* ViewController.swift */; };
 		02C9E6C2206B293000C6D7A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C9E6C0206B293000C6D7A2 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0299052E206C5009000D4961 /* TestQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuestionsViewController.swift; sourceTree = "<group>"; };
 		02C9E6B9206B293000C6D7A2 /* Group18Alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group18Alpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C9E6BC206B293000C6D7A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02C9E6BE206B293000C6D7A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,8 +72,13 @@
 		02C9E6BB206B293000C6D7A2 /* Group18Alpha */ = {
 			isa = PBXGroup;
 			children = (
+				5397B6352080338500BDF138 /* LabelTableViewCell.swift */,
+				5397B639208033BD00BDF138 /* SettingToggleTableViewCell.swift */,
+				5397B637208033AC00BDF138 /* DeleteAccountTableViewCell.swift */,
+				5397B63B208036C500BDF138 /* SettingsTableViewController.swift */,
 				02C9E6BC206B293000C6D7A2 /* AppDelegate.swift */,
 				02C9E6BE206B293000C6D7A2 /* ViewController.swift */,
+				0299052E206C5009000D4961 /* TestQuestionsViewController.swift */,
 				02C9E6C0206B293000C6D7A2 /* Main.storyboard */,
 				DA6A5E3D206C66BA0069AD50 /* SignupViewController.swift */,
 				DA6A5E3B206C66970069AD50 /* LoginViewController.swift */,
@@ -255,6 +262,11 @@
 				02C9E6C5206B293000C6D7A2 /* Group18Alpha.xcdatamodeld in Sources */,
 				DA6A5E3E206C66BA0069AD50 /* SignupViewController.swift in Sources */,
 				02C9E6BF206B293000C6D7A2 /* ViewController.swift in Sources */,
+				5397B638208033AC00BDF138 /* DeleteAccountTableViewCell.swift in Sources */,
+				5397B63A208033BD00BDF138 /* SettingToggleTableViewCell.swift in Sources */,
+				5397B63C208036C500BDF138 /* SettingsTableViewController.swift in Sources */,
+				5397B6362080338500BDF138 /* LabelTableViewCell.swift in Sources */,
+				0299052F206C5009000D4961 /* TestQuestionsViewController.swift in Sources */,
 				02C9E6BD206B293000C6D7A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +407,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Group18Alpha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CS329E.Group18Alpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,6 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Group18Alpha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CS329E.Group18Alpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
