@@ -14,6 +14,10 @@
 		02C9E6C5206B293000C6D7A2 /* Group18Alpha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02C9E6C3206B293000C6D7A2 /* Group18Alpha.xcdatamodeld */; };
 		02C9E6C7206B293000C6D7A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C9E6C6206B293000C6D7A2 /* Assets.xcassets */; };
 		02C9E6CA206B293000C6D7A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C9E6C8206B293000C6D7A2 /* LaunchScreen.storyboard */; };
+		5397B6362080338500BDF138 /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397B6352080338500BDF138 /* LabelTableViewCell.swift */; };
+		5397B638208033AC00BDF138 /* DeleteAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397B637208033AC00BDF138 /* DeleteAccountTableViewCell.swift */; };
+		5397B63A208033BD00BDF138 /* SettingToggleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397B639208033BD00BDF138 /* SettingToggleTableViewCell.swift */; };
+		5397B63C208036C500BDF138 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397B63B208036C500BDF138 /* SettingsTableViewController.swift */; };
 		DA6A5E3C206C66970069AD50 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A5E3B206C66970069AD50 /* LoginViewController.swift */; };
 		DA6A5E3E206C66BA0069AD50 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A5E3D206C66BA0069AD50 /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +32,10 @@
 		02C9E6C6206B293000C6D7A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02C9E6C9206B293000C6D7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02C9E6CB206B293000C6D7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5397B6352080338500BDF138 /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
+		5397B637208033AC00BDF138 /* DeleteAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountTableViewCell.swift; sourceTree = "<group>"; };
+		5397B639208033BD00BDF138 /* SettingToggleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingToggleTableViewCell.swift; sourceTree = "<group>"; };
+		5397B63B208036C500BDF138 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		DA6A5E3B206C66970069AD50 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DA6A5E3D206C66BA0069AD50 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +70,10 @@
 		02C9E6BB206B293000C6D7A2 /* Group18Alpha */ = {
 			isa = PBXGroup;
 			children = (
+				5397B6352080338500BDF138 /* LabelTableViewCell.swift */,
+				5397B639208033BD00BDF138 /* SettingToggleTableViewCell.swift */,
+				5397B637208033AC00BDF138 /* DeleteAccountTableViewCell.swift */,
+				5397B63B208036C500BDF138 /* SettingsTableViewController.swift */,
 				02C9E6BC206B293000C6D7A2 /* AppDelegate.swift */,
 				02C9E6BE206B293000C6D7A2 /* ViewController.swift */,
 				0299052E206C5009000D4961 /* TestQuestionsViewController.swift */,
@@ -152,6 +164,10 @@
 				02C9E6C5206B293000C6D7A2 /* Group18Alpha.xcdatamodeld in Sources */,
 				DA6A5E3E206C66BA0069AD50 /* SignupViewController.swift in Sources */,
 				02C9E6BF206B293000C6D7A2 /* ViewController.swift in Sources */,
+				5397B638208033AC00BDF138 /* DeleteAccountTableViewCell.swift in Sources */,
+				5397B63A208033BD00BDF138 /* SettingToggleTableViewCell.swift in Sources */,
+				5397B63C208036C500BDF138 /* SettingsTableViewController.swift in Sources */,
+				5397B6362080338500BDF138 /* LabelTableViewCell.swift in Sources */,
 				0299052F206C5009000D4961 /* TestQuestionsViewController.swift in Sources */,
 				02C9E6BD206B293000C6D7A2 /* AppDelegate.swift in Sources */,
 			);
@@ -292,6 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Group18Alpha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CS329E.Group18Alpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,6 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Group18Alpha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CS329E.Group18Alpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
