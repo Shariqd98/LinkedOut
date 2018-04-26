@@ -11,7 +11,7 @@ import Firebase
 import FBSDKLoginKit
 import TwitterKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var userName: UITextField! //is actually e-mail
     @IBOutlet var passWord: UITextField!
@@ -23,6 +23,8 @@ class LoginViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         self.hideKeyboardWhenTappedAround()
+        self.userName.delegate = self
+        self.passWord.delegate = self
     }
 
     @IBAction func forgotPassBtn(_ sender: AnyObject) {
@@ -58,6 +60,7 @@ class LoginViewController: UIViewController {
         present(alertView, animated: true, completion: nil)
     }
     
+    //Normal login
     @IBAction func loginBtn(_ sender: Any) {
         let email = userName.text!
         let pass = passWord.text!
@@ -140,6 +143,14 @@ class LoginViewController: UIViewController {
     
     @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if let user = Auth.auth().currentUser {
+            self.performSegue(withIdentifier: "loginSegue", sender: self)
+        }
     }
     
 //    override func viewDidAppear(_ animated: Bool) {

@@ -9,7 +9,6 @@
 import UIKit
 
 class DeleteAccountTableViewCell: UITableViewCell {
-    @IBOutlet weak var deleteAccountButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,5 +17,4 @@ class DeleteAccountTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-
 }

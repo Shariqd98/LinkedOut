@@ -10,24 +10,93 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class SignupViewController: UIViewController {
+class SignupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
 
     @IBOutlet var firstName: UITextField!
     @IBOutlet var lastName: UITextField!
-    @IBOutlet var dateOfBirth: UITextField!
     @IBOutlet var city: UITextField!
+    @IBOutlet var age: UITextField!
     @IBOutlet var state: UITextField!
-    @IBOutlet var zipCode: UITextField!
-    @IBOutlet var phoneNum: UITextField!
     @IBOutlet var emailAdd: UITextField!
-    @IBOutlet var userName: UITextField!
     @IBOutlet var passWord: UITextField!
     @IBOutlet var confirmPassword: UITextField!
+    @IBOutlet var profileImage: UIImageView!
+    @IBOutlet var profileChangeBtn: UIButton!
+    
+    let states = [ "AK",
+                   "AL",
+                   "AR",
+                   "AS",
+                   "AZ",
+                   "CA",
+                   "CO",
+                   "CT",
+                   "DC",
+                   "DE",
+                   "FL",
+                   "GA",
+                   "GU",
+                   "HI",
+                   "IA",
+                   "ID",
+                   "IL",
+                   "IN",
+                   "KS",
+                   "KY",
+                   "LA",
+                   "MA",
+                   "MD",
+                   "ME",
+                   "MI",
+                   "MN",
+                   "MO",
+                   "MS",
+                   "MT",
+                   "NC",
+                   "ND",
+                   "NE",
+                   "NH",
+                   "NJ",
+                   "NM",
+                   "NV",
+                   "NY",
+                   "OH",
+                   "OK",
+                   "OR",
+                   "PA",
+                   "PR",
+                   "RI",
+                   "SC",
+                   "SD",
+                   "TN",
+                   "TX",
+                   "UT",
+                   "VA",
+                   "VI",
+                   "VT",
+                   "WA",
+                   "WI",
+                   "WV",
+                   "WY"]
+    
+    var statePicker = UIPickerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.hideKeyboardWhenTappedAround()
+        
         // Do any additional setup after loading the view.
+        self.firstName.delegate = self
+        self.lastName.delegate = self
+        self.city.delegate = self
+        self.age.delegate = self
+        self.emailAdd.delegate = self
+        self.passWord.delegate = self
+        self.confirmPassword.delegate = self
+        statePicker.delegate = self
+        statePicker.dataSource = self
+        state.inputView = statePicker
+        
     }
     
     //keyboard dismissal on return button
@@ -36,27 +105,38 @@ class SignupViewController: UIViewController {
         return false
     }
     
+    //FOR STATE PICKER
+    // returns the number of 'columns' to display.
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    // returns the # of rows in each component..
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return states.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return states[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        state.text = states[row]
+    }
+    //DONE WITH STATE PICKER
+    
     @IBAction func doneBtn(_ sender: Any) {
         signupDone()
         handleSignUp()
     }
     
     func handleSignUp() {
-        let username = userName.text!
         let email = emailAdd.text!
         let pass = passWord.text!
         
         Auth.auth().createUser(withEmail: email, password: pass) { user, error in
             if error == nil && user != nil {
                 print("User Created!")
-                
-                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
-                changeRequest?.displayName = username
-                changeRequest?.commitChanges { error in
-                    if error == nil {
-                        print("User display name changed!")
-                    }
-                }
                 self.performSegue(withIdentifier: "signupSegue", sender: Any?.self)
             } else {
                 let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
@@ -90,7 +170,7 @@ class SignupViewController: UIViewController {
             alertView.addAction(ok)
             present(alertView, animated: true, completion: nil)
             
-        }else if ((dateOfBirth.text!.isEmpty) || (city.text!.isEmpty)) {
+        }else if ((state.text!.isEmpty) || (city.text!.isEmpty)) {
             let alertView = UIAlertController(title: "Missing Info", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
             let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
                 print("Ok Button")
@@ -98,23 +178,7 @@ class SignupViewController: UIViewController {
             alertView.addAction(ok)
             present(alertView, animated: true, completion: nil)
             
-        }else if ((state.text!.isEmpty) || (zipCode.text!.isEmpty)) {
-            let alertView = UIAlertController(title: "Missing Info", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
-            let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
-                print("Ok Button")
-            })
-            alertView.addAction(ok)
-            present(alertView, animated: true, completion: nil)
-            
-        }else if ((phoneNum.text!.isEmpty) || (emailAdd.text!.isEmpty)) {
-            let alertView = UIAlertController(title: "Missing Info", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
-            let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
-                print("Ok Button")
-            })
-            alertView.addAction(ok)
-            present(alertView, animated: true, completion: nil)
-            
-        }else if ((userName.text!.isEmpty) || (passWord.text!.isEmpty)) {
+        }else if ((emailAdd.text!.isEmpty) || (passWord.text!.isEmpty)) {
             let alertView = UIAlertController(title: "Missing Info", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
             let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) -> Void in
                 print("Ok Button")

@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
 class SettingsTableViewController: UITableViewController {
     private var temp:Int = 0
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Settings"
@@ -20,6 +21,11 @@ class SettingsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    @IBAction func logOutBtn(_ sender: Any) {
+        try! Auth.auth().signOut()
+        self.dismiss(animated: false, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,7 +55,7 @@ class SettingsTableViewController: UITableViewController {
         }
         else if temp == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: "SettingID", for: indexPath) as! SettingToggleTableViewCell
-            cell.settingLabel?.text = "All"
+            cell.settingLabel?.text = "Everyone"
             temp = 2
             return cell
         }
@@ -61,7 +67,7 @@ class SettingsTableViewController: UITableViewController {
         }
         else if temp == 3{
             let cell = tableView.dequeueReusableCell(withIdentifier: "SettingID", for: indexPath) as! SettingToggleTableViewCell
-            cell.settingLabel?.text = "Connections Only"
+            cell.settingLabel?.text = "Your Connections"
             temp = 4
             return cell
         }
@@ -86,8 +92,8 @@ class SettingsTableViewController: UITableViewController {
         }
         else if temp == 7{
             let cell = tableView.dequeueReusableCell(withIdentifier: "LabelID", for: indexPath) as! LabelTableViewCell
-            cell.mainLabel?.text = "Close Account"
-            cell.infoLabel?.text = "Control who sees your Profile"
+            cell.mainLabel?.text = "Log Out"
+            cell.infoLabel?.text = "This option will log you out of your account."
             temp = 8
             return cell
         }
