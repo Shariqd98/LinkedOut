@@ -7,14 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02141CE72081325500D7E1AB /* TestQuestions2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02141CE62081325500D7E1AB /* TestQuestions2ViewController.swift */; };
-		02141CE92081326400D7E1AB /* TestQuestions3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02141CE82081326400D7E1AB /* TestQuestions3ViewController.swift */; };
-		02141CEB2081327100D7E1AB /* TestQuestions4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02141CEA2081327100D7E1AB /* TestQuestions4ViewController.swift */; };
-		02141CED2081327E00D7E1AB /* TestQuestions5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02141CEC2081327E00D7E1AB /* TestQuestions5ViewController.swift */; };
-		02141CEF2081328D00D7E1AB /* TestQuestions6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02141CEE2081328D00D7E1AB /* TestQuestions6ViewController.swift */; };
 		02141CF1208132A400D7E1AB /* TestResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02141CF0208132A400D7E1AB /* TestResultsViewController.swift */; };
-		02B2E443209660960099DD48 /* TestQuestions7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B2E442209660960099DD48 /* TestQuestions7ViewController.swift */; };
-		02B2E445209660A60099DD48 /* TestQuestions8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B2E444209660A60099DD48 /* TestQuestions8ViewController.swift */; };
 		02C9E6BD206B293000C6D7A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C9E6BC206B293000C6D7A2 /* AppDelegate.swift */; };
 		02C9E6C2206B293000C6D7A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C9E6C0206B293000C6D7A2 /* Main.storyboard */; };
 		02C9E6C5206B293000C6D7A2 /* Group18Alpha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02C9E6C3206B293000C6D7A2 /* Group18Alpha.xcdatamodeld */; };
@@ -32,14 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02141CE62081325500D7E1AB /* TestQuestions2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuestions2ViewController.swift; sourceTree = "<group>"; };
-		02141CE82081326400D7E1AB /* TestQuestions3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuestions3ViewController.swift; sourceTree = "<group>"; };
-		02141CEA2081327100D7E1AB /* TestQuestions4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuestions4ViewController.swift; sourceTree = "<group>"; };
-		02141CEC2081327E00D7E1AB /* TestQuestions5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuestions5ViewController.swift; sourceTree = "<group>"; };
-		02141CEE2081328D00D7E1AB /* TestQuestions6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuestions6ViewController.swift; sourceTree = "<group>"; };
 		02141CF0208132A400D7E1AB /* TestResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultsViewController.swift; sourceTree = "<group>"; };
-		02B2E442209660960099DD48 /* TestQuestions7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuestions7ViewController.swift; sourceTree = "<group>"; };
-		02B2E444209660A60099DD48 /* TestQuestions8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuestions8ViewController.swift; sourceTree = "<group>"; };
 		02C9E6B9206B293000C6D7A2 /* Group18Alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group18Alpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C9E6BC206B293000C6D7A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02C9E6C1206B293000C6D7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,12 +80,12 @@
 		02C9E6BB206B293000C6D7A2 /* Group18Alpha */ = {
 			isa = PBXGroup;
 			children = (
-				02E36A4320805FB400114312 /* TestQuestions */,
+				02E36A4420805FE100114312 /* TestQuestions1ViewController.swift */,
+				02141CF0208132A400D7E1AB /* TestResultsViewController.swift */,
 				5397B6352080338500BDF138 /* LabelTableViewCell.swift */,
 				5397B639208033BD00BDF138 /* SettingToggleTableViewCell.swift */,
 				5397B637208033AC00BDF138 /* DeleteAccountTableViewCell.swift */,
 				5397B63B208036C500BDF138 /* SettingsTableViewController.swift */,
-				02141CF0208132A400D7E1AB /* TestResultsViewController.swift */,
 				02C9E6BC206B293000C6D7A2 /* AppDelegate.swift */,
 				02C9E6C0206B293000C6D7A2 /* Main.storyboard */,
 				DA6A5E3D206C66BA0069AD50 /* SignupViewController.swift */,
@@ -111,21 +97,6 @@
 				02C9E6C3206B293000C6D7A2 /* Group18Alpha.xcdatamodeld */,
 			);
 			path = Group18Alpha;
-			sourceTree = "<group>";
-		};
-		02E36A4320805FB400114312 /* TestQuestions */ = {
-			isa = PBXGroup;
-			children = (
-				02E36A4420805FE100114312 /* TestQuestions1ViewController.swift */,
-				02141CE62081325500D7E1AB /* TestQuestions2ViewController.swift */,
-				02141CE82081326400D7E1AB /* TestQuestions3ViewController.swift */,
-				02141CEA2081327100D7E1AB /* TestQuestions4ViewController.swift */,
-				02141CEC2081327E00D7E1AB /* TestQuestions5ViewController.swift */,
-				02141CEE2081328D00D7E1AB /* TestQuestions6ViewController.swift */,
-				02B2E442209660960099DD48 /* TestQuestions7ViewController.swift */,
-				02B2E444209660A60099DD48 /* TestQuestions8ViewController.swift */,
-			);
-			path = TestQuestions;
 			sourceTree = "<group>";
 		};
 		5F9571109E5E01337D8C14B5 /* Pods */ = {
@@ -296,22 +267,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA6A5E3C206C66970069AD50 /* LoginViewController.swift in Sources */,
-				02141CE72081325500D7E1AB /* TestQuestions2ViewController.swift in Sources */,
 				02C9E6C5206B293000C6D7A2 /* Group18Alpha.xcdatamodeld in Sources */,
-				02B2E445209660A60099DD48 /* TestQuestions8ViewController.swift in Sources */,
-				02141CEB2081327100D7E1AB /* TestQuestions4ViewController.swift in Sources */,
 				DA6A5E3E206C66BA0069AD50 /* SignupViewController.swift in Sources */,
 				5397B638208033AC00BDF138 /* DeleteAccountTableViewCell.swift in Sources */,
-				02B2E443209660960099DD48 /* TestQuestions7ViewController.swift in Sources */,
 				02E36A4520805FE100114312 /* TestQuestions1ViewController.swift in Sources */,
 				02141CF1208132A400D7E1AB /* TestResultsViewController.swift in Sources */,
-				02141CED2081327E00D7E1AB /* TestQuestions5ViewController.swift in Sources */,
 				5397B63A208033BD00BDF138 /* SettingToggleTableViewCell.swift in Sources */,
 				5397B63C208036C500BDF138 /* SettingsTableViewController.swift in Sources */,
-				02141CE92081326400D7E1AB /* TestQuestions3ViewController.swift in Sources */,
 				5397B6362080338500BDF138 /* LabelTableViewCell.swift in Sources */,
 				02C9E6BD206B293000C6D7A2 /* AppDelegate.swift in Sources */,
-				02141CEF2081328D00D7E1AB /* TestQuestions6ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
