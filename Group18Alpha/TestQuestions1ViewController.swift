@@ -10,6 +10,17 @@ import UIKit
 
 class TestQuestions1ViewController: UIViewController {
 
+    // Variables that hold the sum of each type of personality question
+    var logicSum = 0
+    var teammateSum = 0
+    var leadershipSum = 0
+    var artistSum = 0
+    
+    // The 40 different segmented controls for the 40 questions
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,16 +31,4 @@ class TestQuestions1ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
