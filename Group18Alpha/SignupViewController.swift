@@ -21,7 +21,9 @@ class SignupViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet var passWord: UITextField!
     @IBOutlet var confirmPassword: UITextField!
     @IBOutlet var profileImage: UIImageView!
-    @IBOutlet var profileChangeBtn: UIButton!
+    @IBOutlet var tapToChangeProfileBtn: UIButton!
+    
+    var imagePicker:UIImagePickerController!
     
     let states = [ "AK",
                    "AL",
@@ -97,12 +99,30 @@ class SignupViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         statePicker.dataSource = self
         state.inputView = statePicker
         
+        //image picker settings
+        
+        let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
+        profileImage.isUserInteractionEnabled = true
+        profileImage.addGestureRecognizer(imageTap)
+        profileImage.layer.cornerRadius = profileImage.bounds.height / 2
+        profileImage.clipsToBounds = true
+        tapToChangeProfileBtn.addTarget(self, action: #selector(openImagePicker), for: .touchUpInside)
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
     }
     
     //keyboard dismissal on return button
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
+    }
+    
+    //allows profile image to be picked opens Image Picker
+    @objc func openImagePicker(_ sender: Any) {
+        self.present(imagePicker, animated: true, completion: nil)
     }
     
     //FOR STATE PICKER
@@ -133,11 +153,40 @@ class SignupViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     func handleSignUp() {
         let email = emailAdd.text!
         let pass = passWord.text!
+        let fullName = "\(firstName.text!)" + " " + "\(lastName.text!)"
+        let cityData = city.text!
+        let stateData = state.text!
+        let ageData = age.text!
+        guard let image = profileImage.image else {return}
         
         Auth.auth().createUser(withEmail: email, password: pass) { user, error in
             if error == nil && user != nil {
                 print("User Created!")
-                self.performSegue(withIdentifier: "signupSegue", sender: Any?.self)
+                
+                //upload image and save data to database and storage
+                
+                self.uploadProfileImage(image) {url in
+                    if url != nil {
+                        let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                        changeRequest?.displayName = fullName
+                        changeRequest?.photoURL = url
+                        
+                        changeRequest?.commitChanges {error in
+                            if error == nil {
+                                print("Saved changes to Firebase")
+                                self.saveProfile(fullName: fullName, profileImageURL: url!, cityData: cityData, stateData: stateData, ageData:ageData) {success in
+                                    if success {
+                                        self.performSegue(withIdentifier: "signupSegue", sender: Any?.self)
+                                    }
+                                }
+                            } else {
+                                print("Error: \(error!.localizedDescription)")
+                            }
+                        }
+                    }else {
+                        //Error, cant upload profile image
+                    }
+                }
             } else {
                 let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                 
@@ -147,6 +196,46 @@ class SignupViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                 self.present(alertController, animated: true, completion: nil)
             }
             
+        }
+    }
+    
+    //uploads image to firebase storage
+    func uploadProfileImage(_ image:UIImage, completion: @escaping ((_ url:URL?) -> ())) {
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        let storageRef = Storage.storage().reference().child("user/\(uid)")
+        
+        guard let imageData = UIImageJPEGRepresentation(image, 0.75) else {return}
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/jpg"
+        
+        storageRef.putData(imageData, metadata: metaData) {metaData, error in
+            if error == nil, metaData != nil {
+                //it worked
+                if let url = metaData?.downloadURL() {
+                    completion(url)
+                }else {
+                    completion(nil)
+                }
+            } else {
+                completion(nil)
+            }
+        }
+    }
+    
+    //uploads data to Firebase database
+    func saveProfile(fullName:String ,profileImageURL:URL, cityData:String, stateData:String, ageData:String, completion: @escaping ((_ success:Bool) -> ())) {
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        let databaseRef = Database.database().reference().child("users/profile/\(uid)")
+        let userObject = [
+            "fullName": fullName,
+            "age": ageData,
+            "city": cityData,
+            "state": stateData,
+            "photoURL": profileImageURL.absoluteString
+        ] as [String:Any]
+        
+        databaseRef.setValue(userObject) {error, ref in
+            completion(error == nil)
         }
     }
     
@@ -204,4 +293,20 @@ class SignupViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     */
 
+}
+
+extension SignupViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let pickedimage = info[UIImagePickerControllerEditedImage] as? UIImage {
+            self.profileImage.image = pickedimage
+        }
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
 }

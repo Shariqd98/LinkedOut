@@ -25,7 +25,7 @@ class SettingsTableViewController: UITableViewController {
     
     @IBAction func logOutBtn(_ sender: Any) {
         try! Auth.auth().signOut()
-        self.dismiss(animated: false, completion: nil)
+        self.performSegue(withIdentifier: "logOutSegue", sender: Any?.self)
     }
 
     override func didReceiveMemoryWarning() {
