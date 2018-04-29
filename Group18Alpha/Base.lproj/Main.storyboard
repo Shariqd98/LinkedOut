@@ -339,7 +339,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVn-ea-Tcn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="XGa-Jg-VGK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1878" y="869"/>
+            <point key="canvasLocation" x="-1250" y="788"/>
         </scene>
         <!--Test Questions1 View Controller-->
         <scene sceneID="4z4-v0-JpY">
@@ -369,17 +369,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gEi-UQ-c9Y">
-                                                <rect key="frame" x="16" y="305" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are usually highly motivated and energetic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFP-mg-Bs4">
                                                 <rect key="frame" x="16" y="341" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -387,17 +376,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yr3-BP-alx">
-                                                <rect key="frame" x="16" y="390" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Winning a debate matters less to you than making sure no one gets upset" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGl-em-GEE">
                                                 <rect key="frame" x="16" y="426" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -405,17 +383,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fvo-Aw-6rL">
-                                                <rect key="frame" x="16" y="475" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You rarely do something just out of sheer curiosity" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYL-uQ-A0U">
                                                 <rect key="frame" x="16" y="511" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -423,28 +390,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mNL-ne-Rgy">
-                                                <rect key="frame" x="16" y="560" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="D3e-Xr-UE4">
-                                                <rect key="frame" x="16" y="220" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You do not mind being at the center of attention" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnS-yU-bgP">
                                                 <rect key="frame" x="16" y="596" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -459,17 +404,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Up3-gB-UhH">
-                                                <rect key="frame" x="16" y="730" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="People can rarely upset you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxq-SR-pIy">
                                                 <rect key="frame" x="16" y="766" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -477,17 +411,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CiB-sa-tCo">
-                                                <rect key="frame" x="16" y="815" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your travel plans are usually well thought out" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dn-0e-Tb7">
                                                 <rect key="frame" x="16" y="851" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -495,17 +418,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="D6S-IV-Tz6">
-                                                <rect key="frame" x="16" y="900" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It is often difficult for you to relate to other people’s feelings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcY-XC-agt">
                                                 <rect key="frame" x="16" y="936" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -513,28 +425,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Fke-A8-n3p">
-                                                <rect key="frame" x="16" y="985" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xKl-2e-Bjf">
-                                                <rect key="frame" x="16" y="645" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In a discussion, truth should be more important than people’s sensitivities" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzq-Iv-NXj">
                                                 <rect key="frame" x="16" y="1021" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -549,17 +439,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="l59-XS-sFG">
-                                                <rect key="frame" x="16" y="1155" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your work style is closer to random energy spikes than to an organized approach" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4I-GP-U0t">
                                                 <rect key="frame" x="16" y="1191" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -567,17 +446,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RPF-P7-rP5">
-                                                <rect key="frame" x="16" y="1240" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Being able to develop a plan and stick to it is the most important part of every project" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSi-gx-Yli">
                                                 <rect key="frame" x="16" y="1276" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -585,17 +453,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UZf-As-7fD">
-                                                <rect key="frame" x="16" y="1325" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your home and work environments are quite tidy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSs-5x-8SJ">
                                                 <rect key="frame" x="16" y="1361" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -603,28 +460,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0oK-av-AnP">
-                                                <rect key="frame" x="16" y="1410" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rlx-ED-WpZ">
-                                                <rect key="frame" x="16" y="1070" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You rarely get carried away by fantasies and ideas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bq4-In-2ZI">
                                                 <rect key="frame" x="16" y="1446" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -639,17 +474,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wBe-zI-ZYH">
-                                                <rect key="frame" x="16" y="1580" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If someone does not respond to your email quickly, you worry you said something wrong" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sr7-3f-FSh">
                                                 <rect key="frame" x="16" y="1616" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -657,17 +481,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="baP-vN-J1j">
-                                                <rect key="frame" x="16" y="1665" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="As a parent, you would rather see your child grow up kind than smart" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDN-xF-SKJ">
                                                 <rect key="frame" x="16" y="1701" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -675,17 +488,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="v2k-Mp-SdH">
-                                                <rect key="frame" x="16" y="1750" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You do not let other people influence your actions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMv-NJ-vJf">
                                                 <rect key="frame" x="16" y="1786" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -693,28 +495,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9LL-Ie-q4k">
-                                                <rect key="frame" x="16" y="1835" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cKv-6C-Aa6">
-                                                <rect key="frame" x="16" y="1495" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It doesn't take you long to start getting involved in social activities at your new job" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6w-kQ-y7k">
                                                 <rect key="frame" x="16" y="1871" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -729,17 +509,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QXN-mL-GXM">
-                                                <rect key="frame" x="16" y="2005" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your emotions control you more than you control them" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zr-nL-CVI">
                                                 <rect key="frame" x="16" y="2041" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -747,17 +516,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uO8-kV-myL">
-                                                <rect key="frame" x="16" y="2090" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When you sleep, your dreams tend to focus on the real world and its events" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prY-Wp-q2N">
                                                 <rect key="frame" x="16" y="2126" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -765,17 +523,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="b8D-b1-OOV">
-                                                <rect key="frame" x="16" y="2175" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You often spend time exploring unrealistic and impractical yet intriguing ideas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cT-2w-SOv">
                                                 <rect key="frame" x="16" y="2211" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -783,28 +530,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6Lq-ll-JBm">
-                                                <rect key="frame" x="16" y="2260" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ge0-c7-HaQ">
-                                                <rect key="frame" x="16" y="1920" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are a relatively reserved and quiet person" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3y-zH-16T">
                                                 <rect key="frame" x="16" y="2296" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -819,17 +544,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Xjl-c4-pAJ">
-                                                <rect key="frame" x="16" y="2430" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If your friend is sad, you are more likely to offer support than to suggest solutions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvo-AZ-aX1">
                                                 <rect key="frame" x="16" y="2466" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -837,17 +551,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="x5X-MH-lmf">
-                                                <rect key="frame" x="16" y="2515" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You would rather improvise than spend time coming up with a detailed plan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9k-Oj-4mt">
                                                 <rect key="frame" x="16" y="2551" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -855,17 +558,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2bm-hJ-XgB">
-                                                <rect key="frame" x="16" y="2600" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Keeping your options open is more important than having a to-do list" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmL-cX-pWx">
                                                 <rect key="frame" x="16" y="2636" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -873,28 +565,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9Br-8a-edq">
-                                                <rect key="frame" x="16" y="2685" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="W4U-4L-MDZ">
-                                                <rect key="frame" x="16" y="2345" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You rarely feel insecure" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Sg-ic-UZF">
                                                 <rect key="frame" x="16" y="2721" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -909,17 +579,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZL5-jj-CFZ">
-                                                <rect key="frame" x="16" y="2855" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Being right is more important than being cooperative when it comes to teamwork" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUZ-WH-MLm">
                                                 <rect key="frame" x="16" y="2891" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -927,17 +586,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="C4L-SN-67B">
-                                                <rect key="frame" x="16" y="2940" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You think that everyone’s views should be respected regardless of why they think it" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oa-FN-iDJ">
                                                 <rect key="frame" x="16" y="2976" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -945,17 +593,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HsT-us-HoH">
-                                                <rect key="frame" x="16" y="3025" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You feel more energetic after spending time with a group of people" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOy-md-I0t">
                                                 <rect key="frame" x="16" y="3061" width="343" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -963,28 +600,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mC7-Vf-6nO">
-                                                <rect key="frame" x="16" y="3110" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="t2v-aA-EOR">
-                                                <rect key="frame" x="16" y="2770" width="343" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <segments>
-                                                    <segment title="Disagree"/>
-                                                    <segment title="Neutral"/>
-                                                    <segment title="Agree"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16X-5n-PCM">
                                                 <rect key="frame" x="105" y="3158" width="164" height="53"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -996,10 +611,395 @@
                                                     <segue destination="7vu-MW-mwv" kind="show" id="H5x-aO-iKQ"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Personality Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuW-0y-p8z">
-                                                <rect key="frame" x="8" y="80" width="359" height="41"/>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="D3e-Xr-UE4">
+                                                <rect key="frame" x="40" y="220" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tR3-sn-fD5">
+                                                <rect key="frame" x="40" y="305" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kJ9-Hj-KJ6">
+                                                <rect key="frame" x="40" y="390" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cW9-K9-Pa2">
+                                                <rect key="frame" x="40" y="475" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8gR-F2-Bps">
+                                                <rect key="frame" x="40" y="560" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nyg-Ru-z95">
+                                                <rect key="frame" x="40" y="645" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="o6h-bt-G3B">
+                                                <rect key="frame" x="40" y="730" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="saz-2B-JQ2">
+                                                <rect key="frame" x="40" y="815" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="R37-de-ZPj">
+                                                <rect key="frame" x="40" y="900" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rUM-mQ-jb0">
+                                                <rect key="frame" x="40" y="985" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4jO-d8-OD0">
+                                                <rect key="frame" x="40" y="1070" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UWP-vZ-B7Z">
+                                                <rect key="frame" x="40" y="1240" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0HK-b7-uP1">
+                                                <rect key="frame" x="40" y="1155" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xsR-1Y-hw8">
+                                                <rect key="frame" x="40" y="1325" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tRY-pC-mrM">
+                                                <rect key="frame" x="40" y="1410" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YoN-oX-WfK">
+                                                <rect key="frame" x="40" y="1495" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eaP-SW-GeE">
+                                                <rect key="frame" x="40" y="1580" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8jW-Gm-7Ll">
+                                                <rect key="frame" x="40" y="1665" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Bah-UA-OG4">
+                                                <rect key="frame" x="40" y="1750" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QRi-2g-H0U">
+                                                <rect key="frame" x="40" y="1835" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iJE-gN-pli">
+                                                <rect key="frame" x="40" y="1920" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZCx-wg-JQz">
+                                                <rect key="frame" x="40" y="2005" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hhq-Hg-8EZ">
+                                                <rect key="frame" x="40" y="2090" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cm9-dl-Rcf">
+                                                <rect key="frame" x="40" y="2175" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="djr-qD-9ty">
+                                                <rect key="frame" x="40" y="2260" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="A87-K3-Qc8">
+                                                <rect key="frame" x="40" y="2345" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vhk-b3-CjI">
+                                                <rect key="frame" x="40" y="2430" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jZI-8L-k5M">
+                                                <rect key="frame" x="40" y="2515" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yZb-Aa-ERK">
+                                                <rect key="frame" x="40" y="2600" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hct-5H-Zcf">
+                                                <rect key="frame" x="40" y="2685" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mxm-AP-zuy">
+                                                <rect key="frame" x="40" y="2770" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="V7c-jf-AN2">
+                                                <rect key="frame" x="40" y="2855" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zAZ-5V-PmT">
+                                                <rect key="frame" x="40" y="2940" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="edd-eB-Cea">
+                                                <rect key="frame" x="40" y="3025" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kdR-iz-pEu">
+                                                <rect key="frame" x="46" y="3110" width="295" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="Disagree"/>
+                                                    <segment title="Neutral"/>
+                                                    <segment title="Agree"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Personality Test" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuW-0y-p8z">
+                                                <rect key="frame" x="97" y="53" width="193" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1046,7 +1046,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="CXW-Ha-epf">
-                    <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                    <rect key="frame" x="0.0" y="-1" width="343" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <segments>
@@ -1064,7 +1064,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="m48-YR-tae">
-                    <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                    <rect key="frame" x="0.0" y="-1" width="343" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <segments>
@@ -1082,7 +1082,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="9pk-cZ-edc">
-                    <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                    <rect key="frame" x="0.0" y="-1" width="343" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <segments>
@@ -1100,7 +1100,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="ZVp-l6-wTV">
-                    <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                    <rect key="frame" x="0.0" y="-1" width="343" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <segments>
@@ -1111,7 +1111,7 @@
                     <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </segmentedControl>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="l1b-k7-EAw">
-                    <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                    <rect key="frame" x="0.0" y="-1" width="343" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <segments>
@@ -1122,7 +1122,7 @@
                     <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </segmentedControl>
             </objects>
-            <point key="canvasLocation" x="-1879" y="2871"/>
+            <point key="canvasLocation" x="-362" y="1949"/>
         </scene>
         <!--Messages-->
         <scene sceneID="soc-6y-sGU">
@@ -1247,7 +1247,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BLj-Na-ysf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="542" y="958"/>
+            <point key="canvasLocation" x="542" y="1087"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8ss-zh-MZp">
@@ -1443,7 +1443,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaK-zh-isx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1105" y="1710"/>
+            <point key="canvasLocation" x="542" y="1949"/>
         </scene>
     </scenes>
     <resources>
@@ -1452,7 +1452,7 @@
         <image name="twitterIcon" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RLP-jr-hFQ"/>
-        <segue reference="g6s-v6-bMm"/>
+        <segue reference="rk0-3R-biC"/>
+        <segue reference="KZL-0Z-SV6"/>
     </inferredMetricsTieBreakers>
 </document>
