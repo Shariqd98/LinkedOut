@@ -339,7 +339,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVn-ea-Tcn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="XGa-Jg-VGK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1218" y="549"/>
+            <point key="canvasLocation" x="-1370" y="753"/>
         </scene>
         <!--Test Questions1 View Controller-->
         <scene sceneID="4z4-v0-JpY">
@@ -1119,6 +1119,48 @@
                         <viewLayoutGuide key="safeArea" id="RKu-Yd-Dpg"/>
                     </view>
                     <size key="freeformSize" width="375" height="3700"/>
+                    <connections>
+                        <outlet property="artsyQ1" destination="IoM-2x-hEo" id="jQy-ES-ryC"/>
+                        <outlet property="artsyQ10" destination="kdR-iz-pEu" id="I61-IA-9Si"/>
+                        <outlet property="artsyQ2" destination="8gR-F2-Bps" id="LmI-Kc-87u"/>
+                        <outlet property="artsyQ3" destination="0HK-b7-uP1" id="sCw-v0-iIa"/>
+                        <outlet property="artsyQ4" destination="UWP-vZ-B7Z" id="Jxm-Y4-m4P"/>
+                        <outlet property="artsyQ5" destination="YoN-oX-WfK" id="INB-Ff-8fp"/>
+                        <outlet property="artsyQ6" destination="eaP-SW-GeE" id="uI6-Aa-xpn"/>
+                        <outlet property="artsyQ7" destination="Bah-UA-OG4" id="qZB-h6-MNE"/>
+                        <outlet property="artsyQ8" destination="hhq-Hg-8EZ" id="jmF-5A-Feu"/>
+                        <outlet property="artsyQ9" destination="djr-qD-9ty" id="hSn-di-ZLr"/>
+                        <outlet property="leadershipQ1" destination="W9K-SV-LQE" id="iTX-mJ-KRB"/>
+                        <outlet property="leadershipQ10" destination="edd-eB-Cea" id="Qwc-05-ZTv"/>
+                        <outlet property="leadershipQ2" destination="D3e-Xr-UE4" id="jo7-wq-mGU"/>
+                        <outlet property="leadershipQ3" destination="kJ9-Hj-KJ6" id="7jw-tZ-kxt"/>
+                        <outlet property="leadershipQ4" destination="Nyg-Ru-z95" id="IRw-JA-Jea"/>
+                        <outlet property="leadershipQ5" destination="xsR-1Y-hw8" id="nKG-zP-t44"/>
+                        <outlet property="leadershipQ6" destination="QRi-2g-H0U" id="26O-Ha-8XN"/>
+                        <outlet property="leadershipQ7" destination="iJE-gN-pli" id="tx9-Xy-QSy"/>
+                        <outlet property="leadershipQ8" destination="cm9-dl-Rcf" id="iaR-XK-yT9"/>
+                        <outlet property="leadershipQ9" destination="mxm-AP-zuy" id="KTX-39-VQ3"/>
+                        <outlet property="logicQ1" destination="Vfl-q8-BJf" id="5n8-AG-UDO"/>
+                        <outlet property="logicQ10" destination="zAZ-5V-PmT" id="a85-Ve-H4v"/>
+                        <outlet property="logicQ2" destination="tR3-sn-fD5" id="qqz-7S-ZKh"/>
+                        <outlet property="logicQ3" destination="o6h-bt-G3B" id="Yvc-ge-QF2"/>
+                        <outlet property="logicQ4" destination="R37-de-ZPj" id="r94-Bu-zE9"/>
+                        <outlet property="logicQ5" destination="rUM-mQ-jb0" id="TlA-d3-AU3"/>
+                        <outlet property="logicQ6" destination="4jO-d8-OD0" id="l5w-g3-M5f"/>
+                        <outlet property="logicQ7" destination="tRY-pC-mrM" id="U1f-TU-0zb"/>
+                        <outlet property="logicQ8" destination="A87-K3-Qc8" id="lVc-Hl-rPw"/>
+                        <outlet property="logicQ9" destination="V7c-jf-AN2" id="xFn-se-xf7"/>
+                        <outlet property="teammateQ1" destination="XJP-Kc-k5a" id="IQX-Nt-gO3"/>
+                        <outlet property="teammateQ10" destination="hct-5H-Zcf" id="ROg-fr-aKe"/>
+                        <outlet property="teammateQ2" destination="D6q-R7-tlD" id="Pf4-gV-qhw"/>
+                        <outlet property="teammateQ3" destination="cW9-K9-Pa2" id="Lps-VG-Mjg"/>
+                        <outlet property="teammateQ4" destination="saz-2B-JQ2" id="FXj-Ls-9XO"/>
+                        <outlet property="teammateQ5" destination="8jW-Gm-7Ll" id="266-GD-iQc"/>
+                        <outlet property="teammateQ6" destination="ZCx-wg-JQz" id="QDs-cl-JlS"/>
+                        <outlet property="teammateQ7" destination="Vhk-b3-CjI" id="jYp-eG-O0e"/>
+                        <outlet property="teammateQ8" destination="jZI-8L-k5M" id="Yo5-sm-NHF"/>
+                        <outlet property="teammateQ9" destination="yZb-Aa-ERK" id="c9z-Cq-f54"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C7g-bO-Amj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You rarely feel insecure" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hcy-gu-79c">
