@@ -8,6 +8,8 @@ target 'Group18Alpha' do
   # Pods for Group18Alpha
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
 
   # Pods for Facebook
 pod 'Bolts'

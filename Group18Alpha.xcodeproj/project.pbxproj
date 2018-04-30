@@ -23,6 +23,9 @@
 		5397B638208033AC00BDF138 /* DeleteAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397B637208033AC00BDF138 /* DeleteAccountTableViewCell.swift */; };
 		5397B63A208033BD00BDF138 /* SettingToggleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397B639208033BD00BDF138 /* SettingToggleTableViewCell.swift */; };
 		5397B63C208036C500BDF138 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397B63B208036C500BDF138 /* SettingsTableViewController.swift */; };
+		53F6D9E1209689B100EE1B8E /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6D9E0209689B100EE1B8E /* SearchTableViewController.swift */; };
+		53F6D9E42096949B00EE1B8E /* SearchProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6D9E32096949B00EE1B8E /* SearchProfileTableViewCell.swift */; };
+		53F6D9E620969FE300EE1B8E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6D9E520969FE300EE1B8E /* User.swift */; };
 		540B27D29D5228C70F72BC01 /* Pods_Group18Alpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CF039DF5A49DE556C6E3DC /* Pods_Group18Alpha.framework */; };
 		DA6A5E3C206C66970069AD50 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A5E3B206C66970069AD50 /* LoginViewController.swift */; };
 		DA6A5E3E206C66BA0069AD50 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A5E3D206C66BA0069AD50 /* SignupViewController.swift */; };
@@ -49,6 +52,9 @@
 		5397B637208033AC00BDF138 /* DeleteAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountTableViewCell.swift; sourceTree = "<group>"; };
 		5397B639208033BD00BDF138 /* SettingToggleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingToggleTableViewCell.swift; sourceTree = "<group>"; };
 		5397B63B208036C500BDF138 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		53F6D9E0209689B100EE1B8E /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		53F6D9E32096949B00EE1B8E /* SearchProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProfileTableViewCell.swift; sourceTree = "<group>"; };
+		53F6D9E520969FE300EE1B8E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A103D78102B795D6091A9E62 /* Pods-Group18Alpha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Group18Alpha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Group18Alpha/Pods-Group18Alpha.release.xcconfig"; sourceTree = "<group>"; };
 		B4CF039DF5A49DE556C6E3DC /* Pods_Group18Alpha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Group18Alpha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0EE24B207FE16400D026FB /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
@@ -91,9 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				02E36A4320805FB400114312 /* TestQuestions */,
-				5397B6352080338500BDF138 /* LabelTableViewCell.swift */,
-				5397B639208033BD00BDF138 /* SettingToggleTableViewCell.swift */,
-				5397B637208033AC00BDF138 /* DeleteAccountTableViewCell.swift */,
+				53F6D9E22096946700EE1B8E /* TableViewCells */,
+				53F6D9E0209689B100EE1B8E /* SearchTableViewController.swift */,
 				5397B63B208036C500BDF138 /* SettingsTableViewController.swift */,
 				02141CF0208132A400D7E1AB /* TestResultsViewController.swift */,
 				02C9E6BC206B293000C6D7A2 /* AppDelegate.swift */,
@@ -105,6 +110,7 @@
 				02C9E6CB206B293000C6D7A2 /* Info.plist */,
 				DAD6055B207EC1A300AFE2A8 /* GoogleService-Info.plist */,
 				02C9E6C3206B293000C6D7A2 /* Group18Alpha.xcdatamodeld */,
+				53F6D9E520969FE300EE1B8E /* User.swift */,
 			);
 			path = Group18Alpha;
 			sourceTree = "<group>";
@@ -120,6 +126,17 @@
 				02141CEE2081328D00D7E1AB /* TestQuestions6ViewController.swift */,
 			);
 			path = TestQuestions;
+			sourceTree = "<group>";
+		};
+		53F6D9E22096946700EE1B8E /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				5397B6352080338500BDF138 /* LabelTableViewCell.swift */,
+				5397B639208033BD00BDF138 /* SettingToggleTableViewCell.swift */,
+				5397B637208033AC00BDF138 /* DeleteAccountTableViewCell.swift */,
+				53F6D9E32096949B00EE1B8E /* SearchProfileTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		5F9571109E5E01337D8C14B5 /* Pods */ = {
@@ -226,6 +243,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -237,6 +255,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +275,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -296,11 +314,14 @@
 				DA6A5E3E206C66BA0069AD50 /* SignupViewController.swift in Sources */,
 				5397B638208033AC00BDF138 /* DeleteAccountTableViewCell.swift in Sources */,
 				02E36A4520805FE100114312 /* TestQuestions1ViewController.swift in Sources */,
+				53F6D9E42096949B00EE1B8E /* SearchProfileTableViewCell.swift in Sources */,
+				53F6D9E1209689B100EE1B8E /* SearchTableViewController.swift in Sources */,
 				02141CF1208132A400D7E1AB /* TestResultsViewController.swift in Sources */,
 				02141CED2081327E00D7E1AB /* TestQuestions5ViewController.swift in Sources */,
 				5397B63A208033BD00BDF138 /* SettingToggleTableViewCell.swift in Sources */,
 				5397B63C208036C500BDF138 /* SettingsTableViewController.swift in Sources */,
 				02141CE92081326400D7E1AB /* TestQuestions3ViewController.swift in Sources */,
+				53F6D9E620969FE300EE1B8E /* User.swift in Sources */,
 				5397B6362080338500BDF138 /* LabelTableViewCell.swift in Sources */,
 				02C9E6BD206B293000C6D7A2 /* AppDelegate.swift in Sources */,
 				02141CEF2081328D00D7E1AB /* TestQuestions6ViewController.swift in Sources */,
