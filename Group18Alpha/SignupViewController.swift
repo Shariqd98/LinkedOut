@@ -7,8 +7,10 @@
 //
 
 import UIKit
-import Firebase
 import FirebaseAuth
+import Firebase
+import FirebaseStorage
+import FirebaseDatabase
 
 class SignupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
 
@@ -167,6 +169,7 @@ class SignupViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                 
                 self.uploadProfileImage(image) {url in
                     if url != nil {
+                        //change request allows for DATABASE WRITE
                         let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
                         changeRequest?.displayName = fullName
                         changeRequest?.photoURL = url

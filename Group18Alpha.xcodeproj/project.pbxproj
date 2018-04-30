@@ -26,6 +26,7 @@
 		540B27D29D5228C70F72BC01 /* Pods_Group18Alpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CF039DF5A49DE556C6E3DC /* Pods_Group18Alpha.framework */; };
 		DA6A5E3C206C66970069AD50 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A5E3B206C66970069AD50 /* LoginViewController.swift */; };
 		DA6A5E3E206C66BA0069AD50 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A5E3D206C66BA0069AD50 /* SignupViewController.swift */; };
+		DA91131D2097BB6C00888EBC /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA91131C2097BB6C00888EBC /* ImageService.swift */; };
 		DAAD132620928376000BAB0A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD132520928376000BAB0A /* ProfileViewController.swift */; };
 		DAD6055C207EC1A300AFE2A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAD6055B207EC1A300AFE2A8 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		DA0EE24B207FE16400D026FB /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		DA6A5E3B206C66970069AD50 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DA6A5E3D206C66BA0069AD50 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		DA91131C2097BB6C00888EBC /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		DAAD132520928376000BAB0A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DAD6055B207EC1A300AFE2A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +103,7 @@
 				02C9E6BC206B293000C6D7A2 /* AppDelegate.swift */,
 				02C9E6C0206B293000C6D7A2 /* Main.storyboard */,
 				DAAD132520928376000BAB0A /* ProfileViewController.swift */,
+				DA91131C2097BB6C00888EBC /* ImageService.swift */,
 				DA6A5E3D206C66BA0069AD50 /* SignupViewController.swift */,
 				DA6A5E3B206C66970069AD50 /* LoginViewController.swift */,
 				02C9E6C6206B293000C6D7A2 /* Assets.xcassets */,
@@ -307,6 +310,7 @@
 				5397B63A208033BD00BDF138 /* SettingToggleTableViewCell.swift in Sources */,
 				5397B63C208036C500BDF138 /* SettingsTableViewController.swift in Sources */,
 				02141CE92081326400D7E1AB /* TestQuestions3ViewController.swift in Sources */,
+				DA91131D2097BB6C00888EBC /* ImageService.swift in Sources */,
 				5397B6362080338500BDF138 /* LabelTableViewCell.swift in Sources */,
 				02C9E6BD206B293000C6D7A2 /* AppDelegate.swift in Sources */,
 				02141CEF2081328D00D7E1AB /* TestQuestions6ViewController.swift in Sources */,
