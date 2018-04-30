@@ -13,6 +13,8 @@ class SearchProfileTableViewCell: UITableViewCell {
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var personalityLabel: UILabel!
     @IBOutlet weak var skillLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    
     @IBOutlet weak var profileImage: UIImageView!
     
     override func awakeFromNib() {
