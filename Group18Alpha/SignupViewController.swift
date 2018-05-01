@@ -228,12 +228,16 @@ class SignupViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     //uploads data to Firebase database
     func saveProfile(fullName:String ,profileImageURL:URL, cityData:String, stateData:String, ageData:String, completion: @escaping ((_ success:Bool) -> ())) {
         guard let uid = Auth.auth().currentUser?.uid else {return}
+        let searchPrivate = "False"
+        let skillsAndInt = ["Press + to add" ,"Swipe Left on Me to Edit"]
         let databaseRef = Database.database().reference().child("users/profile/\(uid)")
         let userObject = [
             "fullName": fullName,
             "age": ageData,
             "city": cityData,
             "state": stateData,
+            "searchIsPrivate": searchPrivate,
+            "skillsAndInt": skillsAndInt,
             "photoURL": profileImageURL.absoluteString
         ] as [String:Any]
         
