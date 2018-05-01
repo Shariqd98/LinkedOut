@@ -118,7 +118,7 @@
                     <connections>
                         <outlet property="passWord" destination="FNC-qH-ESC" id="gTi-38-AUN"/>
                         <outlet property="userName" destination="xS6-GQ-QSI" id="phr-Ee-LHh"/>
-                        <segue destination="vWV-FT-Uus" kind="show" identifier="loginSegue" id="5qt-rJ-pcL"/>
+                        <segue destination="xgB-lc-bMA" kind="show" identifier="loginSegue" id="sJz-ec-DfY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -1708,6 +1708,6 @@
         <image name="twitterIcon" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5qt-rJ-pcL"/>
+        <segue reference="sJz-ec-DfY"/>
     </inferredMetricsTieBreakers>
 </document>
