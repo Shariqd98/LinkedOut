@@ -16,15 +16,21 @@ class SearchTableViewController: UITableViewController {
 
     var ref: DatabaseReference!
     var users = [User]()
+    var isSearchPressed: Bool = false
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchUser()
+        //fetchUser()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print(self.users, "Table Data")
+        self.users.removeAll()
+        fetchUser()
+        //print(self.users, "Table Data")
+        self.isSearchPressed = false
         tableView.reloadData()
     }
     
@@ -46,36 +52,53 @@ class SearchTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        let sections = self.users.count
+        var sections: Int = 1
+        if isSearchPressed{
+            sections = self.users.count
+        }
+        
         print(sections)
         return sections
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print("MAKING CELLS")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell", for: indexPath) as! SearchProfileTableViewCell
-        print(indexPath.row)
-        let temp = users[indexPath.row]
-        //print(temp.fullName!)
-        cell.ageLabel?.text = temp.age as? String
-        cell.nameLabel?.text = temp.fullName as? String
-        cell.personalityLabel?.text = temp.personality as? String
         
-        let tempCity = temp.city as? String
-        let tempState = temp.state as? String
-        let tempLocation = tempCity! + ", " + tempState!
         
-        cell.locationLabel?.text = tempLocation
-        cell.skillLabel?.text = temp.state as? String
-        
-        let Url = temp.photoUrl as? String
-        setProfileImage(URL: Url!, profileImage: cell.profileImage)
-        
-        if indexPath.row % 2 == 0{
-            cell.contentView.backgroundColor = UIColor.white
+        if self.isSearchPressed{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell", for: indexPath) as! SearchProfileTableViewCell
+            print(indexPath.row)
+            let temp = users[indexPath.row]
+            //print(temp.fullName!)
+            cell.ageLabel?.text = temp.age as? String
+            cell.nameLabel?.text = temp.fullName as? String
+            cell.personalityLabel?.text = temp.personality as? String
+            
+            let tempCity = temp.city as? String
+            let tempState = temp.state as? String
+            let tempLocation = tempCity! + ", " + tempState!
+            
+            cell.locationLabel?.text = tempLocation
+            print(temp.skillsAndInt)
+            var skillsString = ""
+            for x in temp.skillsAndInt{
+                skillsString = skillsString + x + ", "
+                
+            }
+            cell.skillLabel?.text = skillsString
+            
+            let Url = temp.photoUrl as? String
+            setProfileImage(URL: Url!, profileImage: cell.profileImage)
+            
+            if indexPath.row % 2 == 1{
+                cell.contentView.backgroundColor = UIColor.white
+            }
+            return cell
         }
-        
-        return cell
+        else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "searchConfirmCell", for: indexPath) as! SearchConfirmTableViewCell
+            return cell
+        }
         
     }
     
@@ -84,8 +107,15 @@ class SearchTableViewController: UITableViewController {
     }
     
     private func rowHeight(for indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 80
     }
+    
+    /*override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat{
+        return UITableViewAutomaticDimension
+    }*/
+    
+    
+    
     
     func setProfileImage(URL: String, profileImage: UIImageView){
         if let url = NSURL(string: URL){
@@ -124,6 +154,13 @@ class SearchTableViewController: UITableViewController {
                         if(keys.key == "state"){
                             user.state = keys.value
                         }
+                        if(keys.key == "skillsAndInt"){
+                            //user.skillsAndInt = keys.value
+                            var tempArray = [String]()
+                            for x in (keys.value as? Array<AnyObject>)!{
+                                user.skillsAndInt.append((x as? String)!)
+                            }
+                        }
                         
                         //user.keys = dictionary[keys]
                     }
@@ -140,6 +177,13 @@ class SearchTableViewController: UITableViewController {
         print(self.users)
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if !isSearchPressed{
+            print(self.users)
+            self.isSearchPressed = true
+            tableView.reloadData()
+        }
+    }
 }
 
 

@@ -19,6 +19,8 @@ class SearchProfileTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        profileImage.layer.cornerRadius = profileImage.bounds.height / 2
+        profileImage.clipsToBounds = true
         // Initialization code
     }
 

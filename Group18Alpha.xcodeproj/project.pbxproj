@@ -23,6 +23,7 @@
 		5397B638208033AC00BDF138 /* DeleteAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397B637208033AC00BDF138 /* DeleteAccountTableViewCell.swift */; };
 		5397B63A208033BD00BDF138 /* SettingToggleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397B639208033BD00BDF138 /* SettingToggleTableViewCell.swift */; };
 		5397B63C208036C500BDF138 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397B63B208036C500BDF138 /* SettingsTableViewController.swift */; };
+		53D393212098ED0F00214AEE /* SearchConfirmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D393202098ED0F00214AEE /* SearchConfirmTableViewCell.swift */; };
 		53F6D9E1209689B100EE1B8E /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6D9E0209689B100EE1B8E /* SearchTableViewController.swift */; };
 		53F6D9E42096949B00EE1B8E /* SearchProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6D9E32096949B00EE1B8E /* SearchProfileTableViewCell.swift */; };
 		53F6D9E620969FE300EE1B8E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6D9E520969FE300EE1B8E /* User.swift */; };
@@ -52,6 +53,7 @@
 		5397B637208033AC00BDF138 /* DeleteAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountTableViewCell.swift; sourceTree = "<group>"; };
 		5397B639208033BD00BDF138 /* SettingToggleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingToggleTableViewCell.swift; sourceTree = "<group>"; };
 		5397B63B208036C500BDF138 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		53D393202098ED0F00214AEE /* SearchConfirmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConfirmTableViewCell.swift; sourceTree = "<group>"; };
 		53F6D9E0209689B100EE1B8E /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		53F6D9E32096949B00EE1B8E /* SearchProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProfileTableViewCell.swift; sourceTree = "<group>"; };
 		53F6D9E520969FE300EE1B8E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				5397B639208033BD00BDF138 /* SettingToggleTableViewCell.swift */,
 				5397B637208033AC00BDF138 /* DeleteAccountTableViewCell.swift */,
 				53F6D9E32096949B00EE1B8E /* SearchProfileTableViewCell.swift */,
+				53D393202098ED0F00214AEE /* SearchConfirmTableViewCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				53F6D9E620969FE300EE1B8E /* User.swift in Sources */,
 				5397B6362080338500BDF138 /* LabelTableViewCell.swift in Sources */,
 				02C9E6BD206B293000C6D7A2 /* AppDelegate.swift in Sources */,
+				53D393212098ED0F00214AEE /* SearchConfirmTableViewCell.swift in Sources */,
 				02141CEF2081328D00D7E1AB /* TestQuestions6ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

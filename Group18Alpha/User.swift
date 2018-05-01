@@ -15,5 +15,6 @@ class User: NSObject {
     var personality: AnyObject?
     var photoUrl: AnyObject?
     var state: AnyObject?
+    var skillsAndInt = [String]()
     var searchIsPrivate: AnyObject? = "False" as? AnyObject
 }
