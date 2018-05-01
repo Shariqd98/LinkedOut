@@ -397,7 +397,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XJP-Kc-k5a">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="XJP-Kc-k5a">
                                                 <rect key="frame" x="40" y="238" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -407,8 +407,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="teammateQ1Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="dWZ-xq-8j6"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IoM-2x-hEo">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="IoM-2x-hEo">
                                                 <rect key="frame" x="40" y="323" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -418,8 +421,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="artsyQ1Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="UjB-Mr-2zk"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vfl-q8-BJf">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Vfl-q8-BJf">
                                                 <rect key="frame" x="40" y="408" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -429,8 +435,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="logicQ1Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="gIy-Fn-idI"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="W9K-SV-LQE">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="W9K-SV-LQE">
                                                 <rect key="frame" x="40" y="493" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -440,8 +449,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="leadershipQ1Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="9e6-fE-Wdq"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="D6q-R7-tlD">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="D6q-R7-tlD">
                                                 <rect key="frame" x="40" y="578" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -451,6 +463,9 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="teammateQ2Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="DuL-tJ-7xE"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You feel superior to other people" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeR-rI-kQL">
                                                 <rect key="frame" x="16" y="614" width="343" height="41"/>
@@ -705,10 +720,11 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="checkSums:" destination="vWV-FT-Uus" eventType="touchUpInside" id="Zdh-jP-s5T"/>
                                                     <segue destination="7vu-MW-mwv" kind="show" id="H5x-aO-iKQ"/>
                                                 </connections>
                                             </button>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="D3e-Xr-UE4">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="D3e-Xr-UE4">
                                                 <rect key="frame" x="39" y="663" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -718,8 +734,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="leadershipQ2Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="ntV-8M-7za"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tR3-sn-fD5">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="tR3-sn-fD5">
                                                 <rect key="frame" x="39" y="748" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -729,8 +748,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="logicQ2Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="7gr-xY-n1a"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kJ9-Hj-KJ6">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="kJ9-Hj-KJ6">
                                                 <rect key="frame" x="39" y="833" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -740,8 +762,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="leadershipQ3Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="2Wc-zc-cz2"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cW9-K9-Pa2">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="cW9-K9-Pa2">
                                                 <rect key="frame" x="39" y="918" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -751,8 +776,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="teammateQ3Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="kG7-7j-n4D"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8gR-F2-Bps">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="8gR-F2-Bps">
                                                 <rect key="frame" x="39" y="1003" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -762,8 +790,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="artsyQ2Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="8MQ-55-sUb"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nyg-Ru-z95">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Nyg-Ru-z95">
                                                 <rect key="frame" x="39" y="1088" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -773,8 +804,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="leadershipQ4Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="Lzs-7a-5gs"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="o6h-bt-G3B">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="o6h-bt-G3B">
                                                 <rect key="frame" x="39" y="1173" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -784,8 +818,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="logicQ3Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="6E1-gm-oRJ"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="saz-2B-JQ2">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="saz-2B-JQ2">
                                                 <rect key="frame" x="39" y="1258" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -795,8 +832,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="teammateQ4Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="3B4-s4-swz"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="R37-de-ZPj">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="R37-de-ZPj">
                                                 <rect key="frame" x="39" y="1343" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -806,8 +846,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="logicQ4Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="pOb-mO-OmO"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rUM-mQ-jb0">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="rUM-mQ-jb0">
                                                 <rect key="frame" x="39" y="1428" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -817,8 +860,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="logicQ5Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="74c-DJ-oRO"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4jO-d8-OD0">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="4jO-d8-OD0">
                                                 <rect key="frame" x="39" y="1513" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -828,8 +874,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="logicQ6Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="nTK-2E-RvJ"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UWP-vZ-B7Z">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="UWP-vZ-B7Z">
                                                 <rect key="frame" x="39" y="1683" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -839,8 +888,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="artsyQ4Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="feZ-ar-2p3"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0HK-b7-uP1">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="0HK-b7-uP1">
                                                 <rect key="frame" x="39" y="1598" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -850,8 +902,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="artsyQ3Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="XeX-qg-BQ7"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xsR-1Y-hw8">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="xsR-1Y-hw8">
                                                 <rect key="frame" x="39" y="1768" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -861,8 +916,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="leadershipQ5Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="JTm-82-R8F"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tRY-pC-mrM">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="tRY-pC-mrM">
                                                 <rect key="frame" x="39" y="1853" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -872,8 +930,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="logicQ7Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="ysm-1v-nSu"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YoN-oX-WfK">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="YoN-oX-WfK">
                                                 <rect key="frame" x="39" y="1938" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -883,8 +944,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="artsyQ5Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="Gn4-69-WPD"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eaP-SW-GeE">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="eaP-SW-GeE">
                                                 <rect key="frame" x="39" y="2023" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -894,8 +958,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="artsy6Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="dcc-1V-fv1"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8jW-Gm-7Ll">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="8jW-Gm-7Ll">
                                                 <rect key="frame" x="39" y="2108" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -905,8 +972,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="teammateQ5Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="ngz-Hw-0YG"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Bah-UA-OG4">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Bah-UA-OG4">
                                                 <rect key="frame" x="39" y="2193" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -916,8 +986,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="artsyQ7Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="0ht-Nc-FvL"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QRi-2g-H0U">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="QRi-2g-H0U">
                                                 <rect key="frame" x="39" y="2278" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -927,8 +1000,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="leadershipQ6Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="MIK-3q-QxV"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iJE-gN-pli">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="iJE-gN-pli">
                                                 <rect key="frame" x="39" y="2363" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -938,8 +1014,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="leadershipQ7Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="OFF-9K-LYn"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZCx-wg-JQz">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="ZCx-wg-JQz">
                                                 <rect key="frame" x="39" y="2448" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -949,8 +1028,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="teammateQ6Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="bf1-VD-Xy7"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hhq-Hg-8EZ">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="hhq-Hg-8EZ">
                                                 <rect key="frame" x="39" y="2533" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -960,8 +1042,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="artsyQ8Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="jZU-l1-iW3"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cm9-dl-Rcf">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="cm9-dl-Rcf">
                                                 <rect key="frame" x="39" y="2618" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -971,8 +1056,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="leadershipQ8Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="KDa-wS-euS"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="djr-qD-9ty">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="djr-qD-9ty">
                                                 <rect key="frame" x="39" y="2703" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -982,8 +1070,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="artsyQ9Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="Sl9-F8-Mph"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="A87-K3-Qc8">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="A87-K3-Qc8">
                                                 <rect key="frame" x="39" y="2788" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -993,8 +1084,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="logicQ8Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="9AW-7a-wT4"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vhk-b3-CjI">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Vhk-b3-CjI">
                                                 <rect key="frame" x="39" y="2873" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1004,8 +1098,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="teammateQ7Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="VbY-9v-oZL"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jZI-8L-k5M">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="jZI-8L-k5M">
                                                 <rect key="frame" x="39" y="2958" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1015,8 +1112,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="teammateQ8Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="QRn-6y-RiR"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yZb-Aa-ERK">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="yZb-Aa-ERK">
                                                 <rect key="frame" x="39" y="3043" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1026,8 +1126,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="teammateQ9Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="jam-zt-thn"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hct-5H-Zcf">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="hct-5H-Zcf">
                                                 <rect key="frame" x="39" y="3128" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1037,8 +1140,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="teammateQ10Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="98I-pW-PhL"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mxm-AP-zuy">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="mxm-AP-zuy">
                                                 <rect key="frame" x="39" y="3213" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1048,8 +1154,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="leadershipQ9Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="K5F-0t-8OR"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="V7c-jf-AN2">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="V7c-jf-AN2">
                                                 <rect key="frame" x="39" y="3298" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1059,8 +1168,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="logicQ9Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="rgx-oh-G3h"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zAZ-5V-PmT">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="zAZ-5V-PmT">
                                                 <rect key="frame" x="39" y="3383" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1070,8 +1182,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="logicQ10Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="f7D-Pk-Lf8"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="edd-eB-Cea">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="edd-eB-Cea">
                                                 <rect key="frame" x="39" y="3468" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1081,8 +1196,11 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="leadershipQ10Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="Qre-ze-wAp"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kdR-iz-pEu">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="kdR-iz-pEu">
                                                 <rect key="frame" x="45" y="3553" width="295" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1092,6 +1210,9 @@
                                                     <segment title="Agree"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.43220174309999998" green="0.73548865320000001" blue="0.6625023484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="artsyQ10Decider:" destination="vWV-FT-Uus" eventType="valueChanged" id="P6R-G4-dIj"/>
+                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0020258473232388496" green="0.63838475942611694" blue="0.51631295680999756" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
