@@ -101,8 +101,6 @@ class SearchTableViewController: UITableViewController {
         //self.users.removeAll()
         self.ref = Database.database().reference().child("users/profile")
         self.ref.observe(.childAdded, with: { (snapshot) in
-            
-            //self.ref.observe(<#T##eventType: DataEventType##DataEventType#>, with: <#T##(DataSnapshot) -> Void#>)
             if let dictionary = snapshot.value as? [String: AnyObject]{
                 let user = User()
                 if dictionary["searchIsPrivate"] as? String == "False" {
