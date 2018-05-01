@@ -16,72 +16,47 @@ class SearchTableViewController: UITableViewController {
 
     var ref: DatabaseReference!
     var users = [User]()
-    var index: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchUser()
     }
     
-    func fetchUser(){
-        ref = Database.database().reference().child("users/profile")
-        ref.observe(.childAdded, with: { (snapshot) in
-            if let dictionary = snapshot.value as? [String: AnyObject]{
-                let user = User()
-                for keys in dictionary{
-                    print(keys)
-                    if(keys.key == "fullName"){
-                        user.fullName = keys.value
-                    }
-                    if(keys.key == "age"){
-                        user.age = keys.value
-                    }
-                    if(keys.key == "city"){
-                        user.city = keys.value
-                    }
-                    if(keys.key == "personality"){
-                        user.personality = keys.value
-                    }
-                    if(keys.key == "photoURL"){
-                        user.photoUrl = keys.value
-                    }
-                    if(keys.key == "state"){
-                        user.state = keys.value
-                    }
-                    
-                    //user.keys = dictionary[keys]
-                }
-                //user.setValuesForKeys(dictionary)
-                print(user.fullName, user.age, user.city, user.state, user.personality)
-                self.users.append(user)
-            }
-        }, withCancel: nil)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(self.users, "Table Data")
+        tableView.reloadData()
     }
-
+    
+    override func viewDidAppear(_ animated: Bool){
+        super.viewDidAppear(animated)
+        //self.users.removeAll()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        let sections = self.users.count
-        return sections
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        let sections = self.users.count
+        print(sections)
+        return sections
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("MAKING CELLS")
         let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell", for: indexPath) as! SearchProfileTableViewCell
         print(indexPath.row)
-        let temp = users[self.index]
-        self.index += 1
-        print(temp.fullName!)
+        let temp = users[indexPath.row]
+        //print(temp.fullName!)
         cell.ageLabel?.text = temp.age as? String
         cell.nameLabel?.text = temp.fullName as? String
         cell.personalityLabel?.text = temp.personality as? String
@@ -96,7 +71,7 @@ class SearchTableViewController: UITableViewController {
         let Url = temp.photoUrl as? String
         setProfileImage(URL: Url!, profileImage: cell.profileImage)
         
-        if index % 2 == 0{
+        if indexPath.row % 2 == 0{
             cell.contentView.backgroundColor = UIColor.white
         }
         
@@ -121,4 +96,60 @@ class SearchTableViewController: UITableViewController {
         }
     }
     
+    private func fetchUser(){
+        print("FETCHING DATA")
+        //self.users.removeAll()
+        self.ref = Database.database().reference().child("users/profile")
+        self.ref.observe(.childAdded, with: { (snapshot) in
+            
+            //self.ref.observe(<#T##eventType: DataEventType##DataEventType#>, with: <#T##(DataSnapshot) -> Void#>)
+            if let dictionary = snapshot.value as? [String: AnyObject]{
+                let user = User()
+                if dictionary["searchIsPrivate"] as? String == "False" {
+                    for keys in dictionary{
+                        //print(keys)
+                        if(keys.key == "fullName"){
+                            user.fullName = keys.value
+                        }
+                        if(keys.key == "age"){
+                            user.age = keys.value
+                        }
+                        if(keys.key == "city"){
+                            user.city = keys.value
+                        }
+                        if(keys.key == "personality"){
+                            user.personality = keys.value
+                        }
+                        if(keys.key == "photoURL"){
+                            user.photoUrl = keys.value
+                        }
+                        if(keys.key == "state"){
+                            user.state = keys.value
+                        }
+                        
+                        //user.keys = dictionary[keys]
+                    }
+                    //user.setValuesForKeys(dictionary)
+                    //print(user.fullName, user.age, user.city, user.state, user.personality)
+                    self.users.append(user)
+                    print("ADDED", user.fullName as? String)
+                }
+                //print(self.users, "Table Data Fetched")
+            }
+        })
+
+        print("DATA FETCHED")
+        print(self.users)
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+

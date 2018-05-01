@@ -15,4 +15,5 @@ class User: NSObject {
     var personality: AnyObject?
     var photoUrl: AnyObject?
     var state: AnyObject?
+    var searchIsPrivate: AnyObject? = "False" as? AnyObject
 }
