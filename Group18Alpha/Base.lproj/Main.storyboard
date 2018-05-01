@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -81,7 +81,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vWV-FT-Uus" kind="show" id="g6s-v6-bMm"/>
+                                    <segue destination="AYQ-Tz-YO7" kind="show" id="atz-nq-FcN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LinkedOut" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxb-Nr-tmS">
@@ -118,12 +118,12 @@
                     <connections>
                         <outlet property="passWord" destination="FNC-qH-ESC" id="gTi-38-AUN"/>
                         <outlet property="userName" destination="xS6-GQ-QSI" id="phr-Ee-LHh"/>
-                        <segue destination="xgB-lc-bMA" kind="show" identifier="loginSegue" id="RLP-jr-hFQ"/>
+                        <segue destination="vWV-FT-Uus" kind="show" identifier="loginSegue" id="5qt-rJ-pcL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-361" y="116"/>
+            <point key="canvasLocation" x="-1121" y="39"/>
         </scene>
         <!--SignupScreen-->
         <scene sceneID="tgH-FF-abH">
@@ -721,7 +721,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="checkSums:" destination="vWV-FT-Uus" eventType="touchUpInside" id="Zdh-jP-s5T"/>
-                                                    <segue destination="7vu-MW-mwv" kind="show" id="H5x-aO-iKQ"/>
+                                                    <segue destination="7vu-MW-mwv" kind="show" identifier="Results" id="H5x-aO-iKQ"/>
                                                 </connections>
                                             </button>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="D3e-Xr-UE4">
@@ -1693,6 +1693,9 @@
                         <color key="backgroundColor" red="0.0020258473232388496" green="0.63838475942611694" blue="0.51631295680999756" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="WeX-WL-u3k"/>
                     </view>
+                    <connections>
+                        <outlet property="personalityLabel" destination="xJH-u0-bMa" id="cZ3-1X-t4p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaK-zh-isx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1705,7 +1708,6 @@
         <image name="twitterIcon" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rk0-3R-biC"/>
-        <segue reference="KZL-0Z-SV6"/>
+        <segue reference="5qt-rJ-pcL"/>
     </inferredMetricsTieBreakers>
 </document>

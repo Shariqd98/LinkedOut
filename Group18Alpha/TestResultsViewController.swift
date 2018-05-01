@@ -7,13 +7,29 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseStorage
+import FirebaseDatabase
 
 class TestResultsViewController: UIViewController {
 
+    @IBOutlet weak var personalityLabel: UILabel!
+    
+    var personality: String?
+    
+    let userID : String = (Auth.auth().currentUser?.uid)!
+    var ref = Database.database().reference()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Results"
 
-        // Do any additional setup after loading the view.
+        personalityLabel.text = personality
+        
+        self.ref.child("users/profile/\(userID)/personality").setValue(self.personality)
     }
 
     override func didReceiveMemoryWarning() {

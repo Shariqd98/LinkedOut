@@ -573,4 +573,12 @@ class TestQuestions1ViewController: UIViewController {
         print(personalityType)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Results" {
+            if let destinationVC = segue.destination as? TestResultsViewController {
+                destinationVC.personality = personalityType
+            }
+        }
+    }
+    
 }
