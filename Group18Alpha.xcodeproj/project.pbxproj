@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		02141CF1208132A400D7E1AB /* TestResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02141CF0208132A400D7E1AB /* TestResultsViewController.swift */; };
+		024933432098220E00274298 /* MessagingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024933422098220E00274298 /* MessagingTableViewController.swift */; };
+		02493345209825FE00274298 /* CreateGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02493344209825FE00274298 /* CreateGroupTableViewCell.swift */; };
+		0249334720982BEA00274298 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0249334620982BEA00274298 /* ChatViewController.swift */; };
 		02C9E6BD206B293000C6D7A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C9E6BC206B293000C6D7A2 /* AppDelegate.swift */; };
 		02C9E6C2206B293000C6D7A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C9E6C0206B293000C6D7A2 /* Main.storyboard */; };
 		02C9E6C5206B293000C6D7A2 /* Group18Alpha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02C9E6C3206B293000C6D7A2 /* Group18Alpha.xcdatamodeld */; };
@@ -26,6 +29,9 @@
 
 /* Begin PBXFileReference section */
 		02141CF0208132A400D7E1AB /* TestResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultsViewController.swift; sourceTree = "<group>"; };
+		024933422098220E00274298 /* MessagingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingTableViewController.swift; sourceTree = "<group>"; };
+		02493344209825FE00274298 /* CreateGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupTableViewCell.swift; sourceTree = "<group>"; };
+		0249334620982BEA00274298 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		02C9E6B9206B293000C6D7A2 /* Group18Alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group18Alpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C9E6BC206B293000C6D7A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02C9E6C1206B293000C6D7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +88,9 @@
 			children = (
 				02E36A4420805FE100114312 /* TestQuestions1ViewController.swift */,
 				02141CF0208132A400D7E1AB /* TestResultsViewController.swift */,
+				024933422098220E00274298 /* MessagingTableViewController.swift */,
+				0249334620982BEA00274298 /* ChatViewController.swift */,
+				02493344209825FE00274298 /* CreateGroupTableViewCell.swift */,
 				5397B6352080338500BDF138 /* LabelTableViewCell.swift */,
 				5397B639208033BD00BDF138 /* SettingToggleTableViewCell.swift */,
 				5397B637208033AC00BDF138 /* DeleteAccountTableViewCell.swift */,
@@ -201,6 +210,8 @@
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
 				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -213,6 +224,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -277,7 +290,10 @@
 				5397B63A208033BD00BDF138 /* SettingToggleTableViewCell.swift in Sources */,
 				5397B63C208036C500BDF138 /* SettingsTableViewController.swift in Sources */,
 				5397B6362080338500BDF138 /* LabelTableViewCell.swift in Sources */,
+				0249334720982BEA00274298 /* ChatViewController.swift in Sources */,
+				02493345209825FE00274298 /* CreateGroupTableViewCell.swift in Sources */,
 				02C9E6BD206B293000C6D7A2 /* AppDelegate.swift in Sources */,
+				024933432098220E00274298 /* MessagingTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
