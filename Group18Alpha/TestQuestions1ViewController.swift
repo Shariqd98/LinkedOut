@@ -569,6 +569,18 @@ class TestQuestions1ViewController: UIViewController {
             personalityType = "Leader"
         } else if (artistSum > teammateSum) && (artistSum > leadershipSum) && (artistSum > logicSum) {
             personalityType = "Artist"
+        } else if (artistSum == teammateSum) {
+            personalityType = "Artist / Teammate"
+        } else if (artistSum == logicSum) {
+            personalityType = "Artist / Logical"
+        } else if (artistSum == leadershipSum) {
+            personalityType = "Artist / Leader"
+        } else if (logicSum == teammateSum) {
+            personalityType = "Logical / Teammate"
+        } else if (logicSum == leadershipSum) {
+            personalityType = "Logical / Leader"
+        } else if (leadershipSum == teammateSum) {
+            personalityType = "Leader / Teammate"
         }
         print(personalityType)
     }
