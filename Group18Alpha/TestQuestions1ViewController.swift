@@ -10,6 +10,9 @@ import UIKit
 
 class TestQuestions1ViewController: UIViewController {
 
+    // Variable that stores the decided personality type
+    var personalityType = ""
+    
     // Variables that hold the sum of each type of personality question
     var logicSum = 0
     var teammateSum = 0
@@ -525,7 +528,6 @@ class TestQuestions1ViewController: UIViewController {
         case 1:
             leadershipSum += 0
         case 2:
-            
             leadershipSum += 1
         default:
             break
@@ -539,7 +541,6 @@ class TestQuestions1ViewController: UIViewController {
         case 1:
             leadershipSum += 0
         case 2:
-            
             leadershipSum += 1
         default:
             break
@@ -560,6 +561,16 @@ class TestQuestions1ViewController: UIViewController {
     
     @IBAction func checkSums(_ sender: Any) {
         print("Teammate Sum: \(teammateSum), Logic Sum: \(logicSum), Leadership Sum: \(leadershipSum), Artist Sum: \(artistSum)")
+        if (teammateSum > artistSum) && (teammateSum > logicSum) && (teammateSum > leadershipSum) {
+            personalityType = "Teammate"
+        } else if (logicSum > artistSum) && (logicSum > teammateSum) && (logicSum > leadershipSum) {
+            personalityType = "Logical"
+        } else if (leadershipSum > teammateSum) && (leadershipSum > artistSum) && (leadershipSum > logicSum) {
+            personalityType = "Leader"
+        } else if (artistSum > teammateSum) && (artistSum > leadershipSum) && (artistSum > logicSum) {
+            personalityType = "Artist"
+        }
+        print(personalityType)
     }
     
 }
